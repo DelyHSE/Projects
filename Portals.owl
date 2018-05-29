@@ -1,0 +1,665 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#"
+     xml:base="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Имеет_вид -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Имеет_вид">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Является_видом"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Вид"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Имеет_доступ -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Имеет_доступ">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Обеспечивается_доступом"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Доступ"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Имеет_технологию -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Имеет_технологию">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Является_технологией"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Технологии"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Имеет_тип -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Имеет_тип">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Является_типом"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Тип"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Имеет_целевую_задачу -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Имеет_целевую_задачу">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Является_целевой_задачей"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Целевая_задача"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Обеспечивается_доступом -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Обеспечивается_доступом">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Доступ"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Является_видом -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Является_видом">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Вид"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Является_технологией -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Является_технологией">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Технологии"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Является_типом -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Является_типом">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Тип"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Является_целевой_задачей -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Является_целевой_задачей">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Целевая_задача"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Количество_страниц_на_сайте -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Количество_страниц_на_сайте">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Академический -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Академический">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Тип"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Аналитический_портал -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Аналитический_портал">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Целевая_задача"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Вертикальный -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Вертикальный">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Тип"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Вид -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Вид"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Горизонтальный -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Горизонтальный">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Тип"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Доступ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Доступ"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Закрытые_корпоративные_порталы -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Закрытые_корпоративные_порталы">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Имеет_вид"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Имеет_технологию"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Технологии"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Имеет_доступ"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Закрытый"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Имеет_тип"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Корпоративный"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Имеет_целевую_задачу"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Целевая_задача"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Закрытый -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Закрытый">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Доступ"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Открытый"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Корпоративный -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Корпоративный">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Тип"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Локальный -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Локальный">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Вид"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Мировой -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Мировой">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Вид"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Открытый -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Открытый">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Доступ"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Персональный -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Персональный">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Тип"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Имеет_вид"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Вид"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Имеет_доступ"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Доступ"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Имеет_технологию"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Технологии"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Имеет_тип"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Тип"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Имеет_целевую_задачу"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Целевая_задача"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал_B2B -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал_B2B">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Корпоративный"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал_B2C -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал_B2C">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Корпоративный"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал_B2E -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал_B2E">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Корпоративный"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал_БК_СОФТ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал_БК_СОФТ">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Примеры_порталов"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал_ВШЭ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал_ВШЭ">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Примеры_порталов"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Имеет_технологию"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Семантические"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Имеет_тип"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Академический"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Имеет_доступ"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Открытый"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал_каталог -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал_каталог">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Целевая_задача"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал_поддержки_бизнес-процессов -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал_поддержки_бизнес-процессов">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Целевая_задача"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал_поиска_решений -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал_поиска_решений">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Целевая_задача"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал_совместной_работы -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал_совместной_работы">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Целевая_задача"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал_управления_знаниями -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал_управления_знаниями">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Целевая_задача"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал_управления_структурированной_информацией -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал_управления_структурированной_информацией">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Целевая_задача"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал_электронный_рынок -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал_электронный_рынок">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Целевая_задача"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Правительственный -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Правительственный">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Тип"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Примеры_порталов -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Примеры_порталов">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Региональный -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Региональный">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Вид"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Сайты_с_большим_40_страниц -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Сайты_с_большим_40_страниц">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Количество_страниц_на_сайте"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Семантические -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Семантические">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Технологии"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Традиционные"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Страновой -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Страновой">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Вид"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Тематический -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Тематический">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Тип"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Технологии -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Технологии"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Тип -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Тип"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Традиционные -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Традиционные">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Технологии"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Учебные_порталы -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Учебные_порталы">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Имеет_доступ"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Открытый"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Имеет_тип"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Академический"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Целевая_задача -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Целевая_задача"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал_управления_документами; -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал_управления_документами;">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Целевая_задача"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#www.google.com -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#www.google.com">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Имеет_доступ"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Открытый"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <Количество_страниц_на_сайте rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</Количество_страниц_на_сайте>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Академический"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Вертикальный"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Горизонтальный"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Корпоративный"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Персональный"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Правительственный"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Тематический"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Аналитический_портал"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал_каталог"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал_поддержки_бизнес-процессов"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал_поиска_решений"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал_совместной_работы"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал_управления_знаниями"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал_управления_структурированной_информацией"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал_электронный_рынок"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал_управления_документами;"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Вид"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Доступ"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Технологии"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Тип"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Целевая_задача"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Локальный"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Мировой"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Региональный"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Страновой"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал_B2B"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал_B2C"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kotwm/ontologies/2018/4/portals#Портал_B2E"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
